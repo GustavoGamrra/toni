@@ -28,11 +28,13 @@
 
     if (mysqli_num_rows($resultado) > 0) {
         echo "<table border=1> <tr><th>Nome</th>
-            <th>Endereço</th> <th>Telefone</th><th>Ação</tr>";
+            <th>Endereço</th> <th>Telefone</th>
+            <th>Ação</th> <th>excluir</tr>";
         while ($linha = mysqli_fetch_assoc($resultado)) {
             echo "<tr><td>" . $linha['nome'] . "</td><td>" .
                 $linha['endereco'] . "</td><td>" . $linha['telefone'] . "</td>
-                <td> <a href='editar.php?id=" . $linha['id'] . "'>Editar</a> </td></tr>";
+                <td> <a href='editar.php?id=" . $linha['id'] . "'>Editar</a> </td>
+                <td> <a href='excluir.php?id=" . $linha['id'] . "'>excluir</a> </td></tr>";
         }
         echo "</table>";
     } else {
