@@ -1,0 +1,8 @@
+CREATE DATABASE agenda_31;
+
+CREATE TABLE contatos (
+id INT NOT NULL AUTO_INCREMENT,
+nome VARCHAR(100),
+endereco VARCHAR(150),
+telefone VARCHAR(20),
+PRIMARY KEY(id))
