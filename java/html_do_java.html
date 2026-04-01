@@ -3,20 +3,50 @@
     <meta charset="UTF-8">
 <title>java</title>
 <script>
+    let n1 = Number(prompt("digite um numero"));
+    let n2 = Number(prompt("digite mais um numero"));
 
+   let n3 = n1 + n2;
+   let n4 = n1 * n2;
+
+   alert (n3 +"esse é o resultado da soma de seus numeros");
+   alert (n4 + "esse é o resultado da multiplicação de seus numeros");
+
+   let numero = 0;
+   function aumentar(){
+    numero = numero + 1;
+    
+    document.getElementBuid('contador').innerHTML = numero;
+   }
+
+   let no1  = Number(prompt("digite sua primeira nota"));
+   let no2  = Number(prompt("digite sua segunda nota"));
+
+   let no3 = (no1 + no2) / 2
+   if (no3 >=7){
+    alert("você esta aprovado");
+   }
+   else if (1.6 > no3 < 6.9)
+   {
+    alert ("você esta em recuperação");
+   }
+   else (no3 < 1.7)
+   {
+    alert ("você esta reprovado");
+   }
 </script>
 
 </head>
 <body>
 
-    <h1> atividade de java script</h1>
+    <h1>RECEBA VARIOS BOM DIAS!</h1>
     
     <p id="texto1">bom dia meus bacanas</p>
     
     
 <button onclick="document.getElementById('texto1').innerHTML ='Good morning, my cool kids!'">in English please</button>
 <button onclick="document.getElementById('texto1').style.color ='blue'">azul</button> <br>
-<button onclick="document.getElementById('texto1').innerHTML ='Buenos dias, mis chicos geniales'">hablar en espanol</button>
+<button onclick="document.getElementById('texto1').innerHTML ='Buenos dias, mis chicos geniales'">hablar en español</button>
 <button onclick="document.getElementById('texto1').style.color ='red'">vermelho</button> <br>
 <button onclick="document.getElementById('texto1').innerHTML ='ཞོགས་པ་བདེ་ལེགས། ངའི་ཕྲུ་གུ་ཡག་པོ།'">fala em alienigena então</button>
 <button onclick="document.getElementById('texto1').style.color ='green'">verde</button><br>
@@ -24,6 +54,11 @@
 <button onclick="document.getElementById('texto1').style.color ='black'">preto</button> <br>
 <img id="suu" src="s2.jpg" style="display:none; width:300px;">
 <button onclick="document.getElementById('suu').style.display='block'">gugu</button>
-<button onclick="document.getElementById('suu').style.display='none'">sai garai</button>
+<button onclick="document.getElementById('suu').style.display='none'">sai garai</button><br>
+ 
+  <p id="contador">0</p>
+  <button onclick="document.getElementById('contador').innerHTML = numero++">clica aqui</button>
+  
+  
 </body>
 </html>
