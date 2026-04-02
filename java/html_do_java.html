@@ -1,5 +1,6 @@
 <html>
 <head>
+    <link rel="stylesheet" href="css_java.css">
     <meta charset="UTF-8">
 <title>java</title>
 <script>
@@ -26,39 +27,43 @@
    if (no3 >=7){
     alert("você esta aprovado");
    }
-   else if (1.6 > no3 < 6.9)
+   else if ((no3 >= 1.7) && (no3 <= 6.9))
    {
     alert ("você esta em recuperação");
    }
-   else if (no3 < 1.7)
+   else if (no3 <= 1.6)
    {
     alert ("você esta reprovado");
    }
 </script>
 
 </head>
-<body>
+<body id="corpin">
 
     <h1>RECEBA VARIOS BOM DIAS!</h1>
     
     <p id="texto1">bom dia meus bacanas</p>
     
-    
-<button onclick="document.getElementById('texto1').innerHTML ='Good morning, my cool kids!'">in English please</button>
-<button onclick="document.getElementById('texto1').style.color ='blue'">azul</button> <br>
-<button onclick="document.getElementById('texto1').innerHTML ='Buenos dias, mis chicos geniales'">hablar en español</button>
-<button onclick="document.getElementById('texto1').style.color ='red'">vermelho</button> <br>
-<button onclick="document.getElementById('texto1').innerHTML ='ཞོགས་པ་བདེ་ལེགས། ངའི་ཕྲུ་གུ་ཡག་པོ།'">fala em alienigena então</button>
-<button onclick="document.getElementById('texto1').style.color ='green'">verde</button><br>
-<button onclick="document.getElementById('texto1').innerHTML ='bom dia meus bacanas'">volta ao normal seu alienigena</button>
-<button onclick="document.getElementById('texto1').style.color ='black'">preto</button> <br>
+   <div> 
+<button id="um" onclick="document.getElementById('texto1').innerHTML ='Good morning, my cool kids!'">in English please</button>
+<button id="um" onclick="document.getElementById('texto1').style.color ='blue'">azul</button> <br>
+<button id="um" onclick="document.getElementById('texto1').innerHTML ='Buenos dias, mis chicos geniales'">hablar en español</button>
+<button id="um" onclick="document.getElementById('texto1').style.color ='red'">vermelho</button> <br>
+<button id="um" onclick="document.getElementById('texto1').innerHTML ='ཞོགས་པ་བདེ་ལེགས། ངའི་ཕྲུ་གུ་ཡག་པོ།'">fala em alienigena então</button>
+<button id="um" onclick="document.getElementById('texto1').style.color ='green'">verde</button><br>
+<button id="um" onclick="document.getElementById('texto1').innerHTML ='bom dia meus bacanas'">volta ao normal seu alienigena</button>
+<button id="um" onclick="document.getElementById('texto1').style.color ='black'">preto</button>
+</div> <br><div>
 <img id="suu" src="s2.jpg" style="display:none; width:300px;">
-<button onclick="document.getElementById('suu').style.display='block'">gugu</button>
-<button onclick="document.getElementById('suu').style.display='none'">sai garai</button><br>
- 
+<button id="su" onclick="document.getElementById('suu').style.display='block'">gugu</button>
+<button id="su" onclick="document.getElementById('suu').style.display='none'">sai garai</button><br>
+</div>
   <p id="contador">0</p>
   <button onclick="document.getElementById('contador').innerHTML = numero++">clica aqui</button>
-  
+  <button onclick="document.getElementById('corpin').style.backgroundColor = 'green'">verdin</button>
+  <button onclick="document.getElementById('corpin').style.backgroundColor = 'blue'">azulzinho</button>
+  <button onclick="document.getElementById('corpin').style.backgroundColor = 'red'">flamengo</button>
+   <button onclick="document.getElementById('corpin').style.backgroundColor = 'white'">normal</button>
   
 </body>
 </html>
