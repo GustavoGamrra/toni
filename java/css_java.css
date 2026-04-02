@@ -1,0 +1,40 @@
+
+#corpin {
+    margin: 0;
+    padding: 20px;      
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    justify-content: flex-start; 
+    min-height: 100vh;
+    gap: 20px;             
+    font-family: sans-serif;
+}
+
+
+.bloco-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 10px;               
+}
+
+button {
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#suu{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+    width: 100%;            
+    margin-top: 20px;      
+    gap: 15px;              
+}
+
+#su{
+    display: flex;
+    flex-direction: row;    
+    gap: 10px;             
+}
