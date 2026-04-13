@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>padao</title>
+    </head>
+    <body>
+        <input type="text" id="sla">
+        <button onclick="validar()">validar</button>
+    </body>
+    <script>
+        function validar(){
+            let valor = document.grtElementById("sla").value;
+            let regex = /^\(\d{3}\).\(\d{3}\).\(\d{3}\)-\(\d{2}\)$/;
+
+            if (regex.test(valor)) {
+                alert("cpf valido");
+            } else {
+                alert("cpf invalido");
+            }
+        }
+    </script>
+    
+</html>
