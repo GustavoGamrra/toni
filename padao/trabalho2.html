@@ -1,0 +1,70 @@
+<html>
+    <head>
+         <meta charset="UTF-8">
+        <title>padao</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8/inputmask.min.js"></script>
+    </head>
+    <body>
+        <input type="text" id="sla">
+        <button onclick="validar()">validar</button>
+        <br>
+        <br>
+         <input type="text" id="bla">
+        <button onclick="testa()">testar</button>
+         <br>
+         <br>
+         <input type="text" id="emei">
+        <button onclick="emaio()">funcina?._.</button>
+         <br>
+         <br>
+         <input type="text" id="nuu">
+        <button onclick="nuuu()">e isso presta é?</button>
+    </body>
+    <script>
+        function validar(){
+            let valor = document.getElementById("sla").value;
+            let regex = /^(\d{3}\.\d{3}\.\d{3}-\d{2}|\d{11})$/;
+
+            if (regex.test(valor)) {
+                alert("cpf valido");
+            } else {
+                alert("cpf invalido");
+            }
+        }
+        function testa(){ 
+            let ver = document.getElementById("bla").value;
+            let testar = /^(?=.*[A-Z]).{8,}$/;
+
+            if (testar.test(ver)){
+                alert ("senha valida");
+            } else {
+                alert("senha invalida")
+            }
+        }  
+        
+        function emaio(){ 
+            let emei = document.getElementById("emei").value;
+            let emilho = /^[0-9A-Za-z]+@[A-Za-z]+.com$/;
+
+            if (emilho.test(emei)){
+                alert ("seu e-mail é valido");
+            } else {
+                alert("seu e-mail é invalido");
+            }
+        }      
+         function nuuu(){ 
+            let num = document.getElementById("nuu").value;
+            let mun = /^[0-9]+$/;
+
+            if (mun.test(num)){
+                alert ("sequencia valida");
+            } else {
+                alert("sequencia invalida");
+            }
+        }      
+    Inputmask("999.999.999-99").mask(document.getElementById("sla"));
+    
+    
+    </script>
+    
+</html>
